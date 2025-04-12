@@ -1,0 +1,13 @@
+[Unit]
+Description=nut_exporter
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+WorkingDirectory=/opt/nut_exporter
+ExecStart=/opt/nut_exporter/nut_exporter
+
+[Install]
+WantedBy=multi-user.target
+
